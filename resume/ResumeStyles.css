@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium Web');
+
+html {
+	background-color: white;
+}
+
+body {
+	color: #696969;
+	padding-top: 25px;
+	font-family: 'Titillium Web', sans-serif;
+	padding-top: 33px;
+	margin: 0;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.rowLeft {
+	width: 75%;
+}
+
+.rowRight {
+	width: 25%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.skillRow {
+	width: 50%;
+}
+
+#flex_pagebody {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.resumeRow {
+	width: 70%;
+	background-color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.resumeLogo {
+	width: 80%;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #1D1D1D;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.navlink {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 13pt;
+}
+
+#resume_button {
+	margin-top: 20px;
+	width: 100%;
+	background-color: #A9A9A9;
+}
+
+#resume_button:hover {
+	background-color: #DDDDDD;
+	color: black;
+}
+
+a.email {
+	color: #696969;
+}
+
+a:not(.navlink):not(.email) {
+	color: #7F00FF;
+}
+
+nav a:hover {
+	background-color: black;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.social-icons li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.social-icons li a {
+	border-bottom: none;
+}
+
+.social-icons li img {
+	width: 50px;
+	height: 50x;
+	margin-right: 20px;
+}
+
+.copyright {
+	text-align: center;
+}
