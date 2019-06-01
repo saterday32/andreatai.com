@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="contactStyles.css">
 		<link rel="icon" href="../images/IMG_0590.jpg">
 	</head>
-	
+
 	<body>
 		<header>
 			<nav>
@@ -23,10 +23,29 @@
 				<a class="navlink" href="">Contact</a>
 			</nav>
 		</header>
-		
-		<iframe allowTransparency="true" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="//www.123formbuilder.com/my-contact-form-4786436.html">
-			<p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
-		</iframe>
+
+		<h1>Contact Me</h1>
+
+		<form method="POST" action="mailer.php">
+			Subject:
+			<input type="text" name="subject" size="20">
+			<br>
+			<br>
+			Name:
+			<input type="text" name="name" size="20">
+			<br>
+			<br>
+			E-mail:
+			<input type="email" name="email" size="20">
+			<br>
+			<br>
+			Message:
+			<br>
+			<textarea rows="9" name="message" cols="30"></textarea>
+			<br>
+			<br>
+			<input type="submit" value="Send" name="submit">
+		</form>
 
 		<footer>
 			<div class="copyright">
@@ -109,6 +128,6 @@
 				</ul>
 			</div>
 		</footer>
-		
+
 	</body>
 </html>
