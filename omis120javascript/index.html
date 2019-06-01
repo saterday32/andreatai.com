@@ -24,16 +24,16 @@
   <div>
     <h1>Change Body Color</h1>
 
-    <button id="color-button" value="changeColor">Change Color</button>
+    <button onclick="javascript:ChangeColor()">Change Color</button>
 
     <script type="text/javascript">
-      function changeColor() {
-        var x = Math.floor(Math.random() * 256);
-        var y = Math.floor(Math.random() * 256);
-        var z = Math.floor(Math.random() * 256);
-        var BackgroundColor = "rgb(" + x + "," + y + "," + z + ")";
-        console.log(BackgroundColor);
-        document.body.style.background=BackgroundColor;
+      function ChangeColor(){
+        var randcol= "";
+        var allchar="0123456789ABCDEF";
+        for(var i=0; i<6; i++){
+          randcol += allchar[Math.floor(Math.random()*16)];
+        }
+        document.body.style.backgroundColor= "#"+randcol;
       }
     </script>
   </div>
