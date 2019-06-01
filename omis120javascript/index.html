@@ -1,0 +1,77 @@
+<body>
+  <div>
+    <h1>Dog Year Calculator</h1>
+
+    <form>
+      Enter your age: <input type="number" id="years" />
+      <br>
+      <br>
+      <input type="button" value='calculate' onclick="calculate()"/>
+    </form>
+
+    <script type="text/javascript">
+      function calculate() {
+        var ageinput= document.getElementById('years').value;
+        var dogage = ageinput * 7;
+        document.getElementById('ageindogyears').innerHTML = dogage;
+      }
+    </script>
+
+    <p>Your age in Dog Years is: <span id="ageindogyears"></span></p>
+
+    </div>
+
+  <div>
+    <h1>Change Body Color</h1>
+
+    <button id="color-button" value="change color">
+
+    <script type="text/javascript">
+      function changeColor() {
+        body.style.backgroundColor = rgb(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256);
+      }
+      document.getElementById("color-button").onclick = changeColor();
+    </script>
+  </div>
+
+  <div>
+    <h1>Guess Number</h1>
+
+    <p>Pick a number between 1 and 10.</p>
+    <input type='number' id='guess'><br>
+    <input type='button' value='make guess' onclick='myfun();'>
+    <span id='hint'></span>
+    <br>
+    Your past guess:
+    <ul>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+  	var answer = Math.floor(Math.random()*10)+1;
+  	var hint = document.getElementById('hint');
+  	var count=0;
+  	function myfun(){
+  		count = count+1;
+  		//access guess value
+  		var guess = document.getElementById('guess').value;
+  		//compare guess with answer
+  		if(guess == answer){
+  			hint.innerHTML='correct, you got it in '+count+' tries';
+  		} else{
+  			//append history
+  			var child = document.createElement('li');
+  			child.innerHTML = guess;
+  			var parent = document.getElementsByTagName('ul')[0];
+  			parent.appendChild(child);
+  			//display hint
+  			if(guess<answer){
+  				hint.innerHTML='too low';
+  			}
+  			if(guess>answer){
+  				hint.innerHTML='too high';
+  			}
+  		}
+  	}
+  </script>
+</body>
