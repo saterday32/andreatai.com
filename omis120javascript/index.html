@@ -24,17 +24,19 @@
   <div>
     <h1>Change Body Color</h1>
 
-    <button onclick="javascript:ChangeColor()">Change Color</button>
+    <button id="change-color-btn">Change Color</button>
 
     <script type="text/javascript">
-      function ChangeColor(){
+      function changeColor(){
         var randcol= "";
         var allchar="0123456789ABCDEF";
-        for(var i=0; i<6; i++){
-          randcol += allchar[Math.floor(Math.random()*16)];
+        for(var i = 0; i < 6; i++){
+          randcol += allchar[Math.floor(Math.random() * 16)];
         }
-        document.body.style.backgroundColor= "#"+randcol;
+        document.body.style.backgroundColor= "#" + randcol;
       }
+
+      document.getElementById("change-color-btn").onclick = function() { changeColor() };
     </script>
   </div>
 
