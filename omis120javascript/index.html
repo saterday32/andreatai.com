@@ -28,9 +28,13 @@
 
     <script type="text/javascript">
       function changeColor() {
-        body.style.backgroundColor = rgb(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256);
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var BackgroundColor = "rgb(" + x + "," + y + "," + z + ")";
+        console.log(BackgroundColor);
+        document.body.style.background=BackgroundColor;
       }
-      document.getElementById("color-button").onclick = changeColor();
     </script>
   </div>
 
