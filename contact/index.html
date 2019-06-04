@@ -47,38 +47,7 @@
 			<input type="submit" value="Send" name="submit">
 		</form>
 
-		<p>Sign the Guestbook</p>
-
-		<?php
-			if (!(empty($_POST["name"]) || empty($_POST["email"])))
-			{
-				$name = $_POST["name"];
-				$email = $_POST["email"];
-
-				//insert_into
-				$con=mysqli_connect('pdb35.awardspace.net', '3009833_guestbook', 'andreataiguestbook32', '3009833_guestbook');
-				$sql="INSERT INTO guestbook(name, email)VALUES('$name', '$email')";
-				$result=mysqli_query($con,$sql);
-				mysqli_close($con);
-			}
-			else
-			{
-				if (!empty($_POST["submitted"]))
-				{
-					$name_error = empty($_POST["name"]) ? '* name is required' : '';
-					$email_error = empty($_POST["email"]) ? '* email is required' : '';
-				}
-			}
-		?>
-
-		<form action="guestbook.php" method="post">
-			Name: <input type="text" name="name"> <?= $name_error ?><br><br>
-			Email: <input type="email" name="email"> <?= $email_error ?><br><br>
-			<input type="hidden" name="submitted" value="true">
-			<input type="submit">
-		</form>
-
-		<a href="guestbook.php"> View Guestbook</a>
+		<a href="guestbook.php">Sign the Guestbook</a>
 
 		<footer>
 			<div class="copyright">
