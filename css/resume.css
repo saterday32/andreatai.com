@@ -10,6 +10,10 @@ body {
 	margin: 0;
 }
 
+a.email {
+	color: #7F00FF;
+}
+
 .column {
 	float: left;
 	width: 33.33%;
