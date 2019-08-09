@@ -17,6 +17,9 @@
         echo 'An error has occurred! Redirecting to contact form...';
     }
 
-    header("Location: http://www.andreatai.com/contact");
+    echo '<script type="text/JavaScript">
+     window.location.replace("https://andreatai.com/");
+     </script>';
+    die();
     exit();
 ?>
