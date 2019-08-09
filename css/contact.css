@@ -1,0 +1,27 @@
+.contact_form_centering, .contact_form_flexbox {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     /* align-items: center; */
+}
+
+.contact_form_centering {
+     align-items: center;
+}
+
+form {
+     width: 250px;
+}
+
+.contact_form_item {
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.contact_form_item_message, .contact_form_item {
+     margin: 3px 0;
+}
+
+textarea { width: 100%; }
