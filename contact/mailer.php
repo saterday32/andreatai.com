@@ -15,14 +15,18 @@
     } else {
         echo 'An error has occurred! Redirecting to contact form...
         <script>
-          setTimeout(1500);
-          window.location.replace("https://andreatai.com/contact");
+          setTimeout(
+               function() {
+                    window.location.replace("https://andreatai.com/contact");
+               }, 1500);
         </script>';
     }
 
     echo '<script type="text/JavaScript">
-               setTimeout(1500);
-               window.location.replace("https://andreatai.com/");
+              setTimeout(
+                   function() {
+                        window.location.replace("https://andreatai.com");
+                   }, 1500);
           </script>';
     die();
     exit();
