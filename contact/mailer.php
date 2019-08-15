@@ -8,8 +8,7 @@
         $name = $_POST['name'];
         $email = $_POST['email'];
         $message = $_POST['message'];
-        $headers = "From: Contact Form <" . $myAwardSpaceEmail . ">" . "\r\n";
-        $headers .= "Reply-To: " . $name . " <" . $email .">" . "\r\n";
+        $headers = "From: Contact Form - " . $name . " <" . $email . ">" . "\r\n";
 
         echo 'Your message was sent successfully! Returning to previous page now...';
         mail($myPersonalEmail, $subject, $message, $headers);
