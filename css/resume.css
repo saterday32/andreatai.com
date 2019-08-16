@@ -14,15 +14,22 @@ a.email {
 	color: #7F00FF;
 }
 
-.column {
-	float: left;
-	width: 33.33%;
+.general_flex {
+	display: flex;
+	flex-flow: column nowrap;
+	/* justify-content: center; */
+	align-items: center;
 }
 
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+.flex_row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	max-width: 600px;
+}
+
+.flex_row p {
+	padding: 0 20px;
 }
 
 .rowLeft {
@@ -70,4 +77,41 @@ a.email {
 #resume_button:hover {
 	background-color: #DDDDDD;
 	color: black;
+}
+
+@media only screen and (max-width: 900px) {
+
+	h2 {
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+
+	.flex_row {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.flex_row p {
+		padding: 0;
+		margin: 5px 0;
+	}
+
+	.resumeRow {
+		flex-flow: column-reverse nowrap;
+		align-items: center;
+		width: 70%;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	.resumeLogo {
+		margin-top: 50px;
+		max-width: 125px;
+	}
+
+	.rowLeft, .rowRight {
+		width: 100%;
+	}
 }
