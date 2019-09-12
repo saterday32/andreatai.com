@@ -14,8 +14,16 @@
 	</head>
 
 	<body>
+		<div class="page_mask"></div>
+
 		<header>
-			<nav>
+			<div id="navopen">
+				<img src="./images/navopen.svg" alt="Button: Open Navbar">
+			</div>
+			<div id="navclose">
+				<img src="./images/navclose.svg" alt="Button: Close Navbar">
+			</div>
+			<nav id="nav">
 				<a class="navlink" href="">Home</a>
 				<a class="navlink" href="./resume">Resume</a>
 				<a class="navlink" href="./photography">Photography</a>
@@ -24,6 +32,8 @@
 				<a class="navlink" href="./contact">Contact</a>
 			</nav>
 		</header>
+
+		<script type="text/javascript" src="./scripts/navbar.js"></script>
 
 		<div class="hero-image">
   			<div class="hero-text">

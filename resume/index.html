@@ -17,16 +17,27 @@
 
 		<script type="text/javascript" src="../scripts/mobile_detector.js"></script>
 
+		<div class="page_mask"></div>
+
 		<header>
-			<nav>
-				<a tabindex="1" class="navlink" href="..">Home</a>
-				<a tabindex="1" class="navlink" href="">Resume</a>
-				<a tabindex="1" class="navlink" href="../photography">Photography</a>
-				<a tabindex="1" class="navlink" href="../videography/">Videography</a>
-				<a tabindex="1" class="navlink" href="../music">Music</a>
-				<a tabindex="1" class="navlink" href="../contact">Contact</a>
+			<div id="navopen">
+				<img src="../images/navopen_alt.svg" alt="Button: Open Navbar">
+			</div>
+			<div id="navclose">
+				<img src="../images/navclose.svg" alt="Button: Close Navbar">
+			</div>
+			<nav id="nav">
+				<a class="navlink" href="../">Home</a>
+				<a class="navlink" href="../resume">Resume</a>
+				<a class="navlink" href="../photography">Photography</a>
+				<a class="navlink" href="../videography">Videography</a>
+				<a class="navlink" href="../music">Music</a>
+				<a class="navlink" href="../contact">Contact</a>
 			</nav>
 		</header>
+
+		<script type="text/javascript" src="../scripts/navbar.js"></script>
+
 
 		<a id="resume_button" class="navlink" target="_blank">Download Resume</a>
 

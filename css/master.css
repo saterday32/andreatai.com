@@ -23,6 +23,20 @@ th, td {
 	text-align: center;
 }
 
+#navopen {
+	visibility: hidden;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+#navclose {
+	position: fixed;
+	top: 10px;
+	left: -160px;
+}
+
 nav {
 	position: fixed;
 	top: 0;
@@ -33,7 +47,7 @@ nav {
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: center;
-	z-index: 1;
+	z-index: 2;
 }
 
 .navlink {
@@ -46,6 +60,64 @@ nav {
 	font-size: 13pt;
 }
 
+@media only screen and (max-device-width: 600px) {
+	body { padding-top: 0; }
+
+	header {
+		height: 0px;
+		background-color: #1D1D1D;
+	}
+
+	#navopen, #navclose {
+		visibility: visible;
+		cursor: pointer;
+	}
+
+	#navopen {
+		border-radius: 4px;
+		/* background-color: #1D1D1D; */
+		width: 40px;
+		height: 40px;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		left: -220px;
+		width: 220px;
+		height: 100vh;
+		padding-top: 50px;
+		display: inherit;
+		transition: all 0.75s;
+	}
+
+	#navclose {
+		position: fixed;
+		top: 10px;
+		left: -210px;
+		z-index: 3;
+		transition: all 0.75s;
+	}
+
+	#navopen img, #navclose img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.page_mask {
+	     position: fixed;
+	     left: 0;
+	     right: 0;
+	     bottom: 0;
+	     top: 0;
+		height: 100%;
+		width: 100%;
+	     background-color: rgba(0,0,0,0);
+		transition: background 0.75s;
+		z-index: -1;
+	}
+}
+
 a.email {
 	color: white;
 }
@@ -56,18 +128,6 @@ a:not(.navlink):not(.email) {
 
 nav a:hover {
 	background-color: black;
-}
-
-iframe {
-	width: 800px;
-	height: 500px;
-}
-
-#video {
-	position: relative;
-	left: 50%;
-	top: 50px;
-	margin-left: -400px;
 }
 
 .social-icons {

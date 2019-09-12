@@ -73,6 +73,23 @@ a.email {
 	background-color: #A9A9A9;
 }
 
+/* FOR NAVBAR */
+@media only screen and (max-device-width: 600px) {
+	body { padding-top: 0; }
+
+	h1, h2, h3, p, #resume_button { color: #1D1D1D; }
+
+	#resume_button {
+		margin: 60px auto 0 auto;
+		background-color: #A9A9A9;
+		width: 30%;
+		border-radius: 30px;
+		border: 2px solid #1D1D1D;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
 #resume_button:hover {
 	background-color: #DDDDDD;
 	color: black;
