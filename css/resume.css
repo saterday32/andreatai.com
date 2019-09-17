@@ -44,7 +44,7 @@ a.email {
 }
 
 .skillRow {
-	width: 50%;
+	width: 40%;
 }
 
 #flex_pagebody {
@@ -61,12 +61,15 @@ a.email {
 	background-color: white;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .resumeLogo {
 	width: 80%;
+	max-width: 150px;
 }
+
+.skills { width: 45%; }
 
 #resume_button {
 	margin-top: 20px;
