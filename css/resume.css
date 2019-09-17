@@ -44,7 +44,7 @@ a.email {
 }
 
 .skillRow {
-	width: 40%;
+	width: 35%;
 }
 
 #flex_pagebody {
@@ -133,4 +133,6 @@ a.email {
 	.rowLeft, .rowRight {
 		width: 100%;
 	}
+
+	.skillRow { width: inherit; }
 }
