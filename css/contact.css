@@ -32,6 +32,8 @@ textarea { width: 100%; }
 
 .page_content { margin-top: 65px; }
 
+span.required { color: red; }
+
 @media only screen and (max-device-width: 600px) {
      .page_content { margin-top: 0; }
 }
