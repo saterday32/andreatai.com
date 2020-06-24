@@ -8,7 +8,7 @@
         $subject = $_POST['subject'];
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $message = $_POST['message'] . "\r\n\r\nkickdoor is the bestest in da westest.";
+        $message = $_POST['message'];
         $headers = "From: " . $name . " <" . $email . ">" . "\r\n";
 
         mail($myEmail, $subject, $message, $headers);
