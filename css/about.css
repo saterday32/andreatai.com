@@ -8,3 +8,9 @@ h1 { text-align: center; }
   margin-right: auto;
   width: 50%;
 }
+
+.page-content {
+    margin: 0px auto;
+    width: 650px;
+    text-align: center;
+}

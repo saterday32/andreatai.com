@@ -26,7 +26,6 @@
 			</div>
 			<nav id="nav">
 				<a class="navlink" href="../">Home</a>
-				<a class="navlink" href="../about">About</a>
 				<a class="navlink" href="../resume">Resume</a>
 				<a class="navlink" href="../photography">Photography</a>
 				<a class="navlink" href="../videography">Videography</a>
@@ -35,7 +34,54 @@
 			</nav>
 		</header>
 
-		<p>The contact form is currently under construction. Please direct all inquiries to <a href="mailto:andrea@andreatai.com">andrea@andreatai.com.</a></p>
+		<script type="text/javascript" src="../scripts/navbar.js"></script>
+
+		<div class="page_content">
+
+			<h1>Contact Me</h1>
+
+			<div class="contact_form_centering">
+
+
+				<form method="POST" action="mailer.php">
+
+					<div class="contact_form_flexbox">
+
+						<p><span class="required">A red asterix (*) denotes a required field.</span></p>
+
+						<br>
+
+						<div class="contact_form_item">
+							<label for="subject"><span class="required">*</span>Subject:</label>
+							<input required type="text" name="subject" id="subject" size="20">
+						</div>
+
+						<div class="contact_form_item">
+							<label for="name"><span class="required">*</span>Name:</label>
+							<input required type="text" name="name" id="name" size="20">
+						</div>
+
+						<div class="contact_form_item">
+							<label for="email"><span class="required">*</span>E-mail:</label>
+							<input required type="email" name="email" id="email" size="20">
+						</div>
+
+						<div class="contact_form_item_message">
+							<label for="message"><span class="required">*</span>Message:</label>
+							<textarea required rows="9" name="message" id="message" cols="30"></textarea>
+						</div>
+
+						<div class="contact_form_item">
+							<input type="submit" value="Send" name="submit">
+						</div>
+
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
 
 		<footer>
 			<div class="copyright">

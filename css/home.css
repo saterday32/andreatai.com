@@ -15,8 +15,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  width: 1000px;
 }
 
 body {
 	margin: 0;
+	overflow-y: hidden;
 }
