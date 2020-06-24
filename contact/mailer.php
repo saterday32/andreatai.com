@@ -11,7 +11,7 @@
         $headers = "From: " . $name . " <" . $email . ">" . "\r\n";
 
         mail($myEmail, $subject, $message, $headers);
-        echo 'Your message was sent successfully! Returning to previous page now...';
+        echo 'Your message was sent successfully! Returning to homepage now...';
     } else {
         echo 'An error has occurred! Redirecting to contact form...
         <script>
