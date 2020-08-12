@@ -16,11 +16,6 @@ h1 { text-align: center; }
 
 textarea { width: 100%; }
 
-#image {
-	width: 25%;
-	margin: 40px auto 0 auto;
-}
-
 @media only screen and (max-device-width: 600px) {
      .page_content { margin-top: 0; }
 }
