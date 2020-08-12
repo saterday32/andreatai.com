@@ -1,5 +1,7 @@
 body { margin: 0; }
 
+h1 { text-align: center; }
+
 .page_content { margin: 60px 10px 0;}
 
 @media (min-width: 640px) {
