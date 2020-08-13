@@ -10,8 +10,12 @@ h1 { text-align: center; }
 }
 
 .page-content {
-    margin: 60px;
+    /* margin: 60px; */
     text-align: center;
+    display: block;
+    width:50%;
+    margin:40px auto 0 auto;
+
 }
 
 textarea { width: 100%; }

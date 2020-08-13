@@ -122,6 +122,13 @@ nav {
 	}
 }
 
+.separator {
+	height: 3px;
+	width: 50%;
+	background-color: #1a1a1a;
+	margin: 20px 0;
+}
+
 a.email {
 	color: white;
 }
