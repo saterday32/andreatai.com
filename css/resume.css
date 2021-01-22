@@ -43,6 +43,14 @@ a.email {
 	display: flex;
 }
 
+.RecommendationsrowLeft {
+	width: 25%;
+}
+
+.RecommendationsrowRight {
+	width: 75%;
+}
+
 .skillRow {
 	width: 35%;
 }
