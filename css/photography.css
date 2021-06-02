@@ -4,6 +4,32 @@ h1 { text-align: center; }
 
 .page_content { margin: 60px 10px 0;}
 
+#modelcard_button {
+	margin-top: 20px;
+	background-color: #A9A9A9;
+}
+
+@media only screen and (max-device-width: 600px) {
+	body { padding-top: 0; }
+
+	h1, h2, h3, p, #modelcard_button { color: #1D1D1D; }
+
+	#modelcard_button {
+		margin: 60px auto 0 auto;
+		background-color: #A9A9A9;
+		width: 30%;
+		border-radius: 30px;
+		border: 2px solid #1D1D1D;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
+#modelcard_button:hover {
+	background-color: #DDDDDD;
+	color: black;
+}
+
 @media (min-width: 640px) {
   .image-row {
     text-align: center; } }
