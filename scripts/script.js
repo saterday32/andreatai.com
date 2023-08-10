@@ -1,1 +1,1 @@
-&copy; <script>document.write(new Date().getFullYear());</script>
+document.getElementById("year").innerHTML = (new Date().getFullYear());
