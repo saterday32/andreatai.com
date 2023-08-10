@@ -11,3 +11,5 @@ document.getElementById('navclose').onclick = function() {
      document.getElementsByClassName('page_mask')[0].style.backgroundColor = 'rgba(0,0,0,0)';
      setTimeout(function(){document.getElementsByClassName('page_mask')[0].style.zIndex = '-1';}, 750);
 };
+
+document.getElementById("year").innerHTML = (new Date().getFullYear());
