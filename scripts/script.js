@@ -1,4 +1,1 @@
-const footerYear = document.querySelectorAll(".year");
-footerYear.forEach(copyright => {
-  copyright.innerHTML = new Date().getFullYear();
-});
+&copy; <script>document.write(new Date().getFullYear());</script>
